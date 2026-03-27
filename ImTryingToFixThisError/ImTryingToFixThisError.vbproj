@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{848B6EF7-A1F4-4C1E-B614-6D2B095F3889}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ImTryingToFixThisError.My.MyApplication</StartupObject>
+    <RootNamespace>ImTryingToFixThisError</RootNamespace>
+    <AssemblyName>ImTryingToFixThisError</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ImTryingToFixThisError.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ImTryingToFixThisError.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAboutPage.Designer.vb">
+      <DependentUpon>frmAboutPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddProject.Designer.vb">
+      <DependentUpon>frmAddProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminPanel.Designer.vb">
+      <DependentUpon>frmAdminPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminSettings.Designer.vb">
+      <DependentUpon>frmAdminSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrowseProblems.Designer.vb">
+      <DependentUpon>frmBrowseProblems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrowseProblems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnectPage.Designer.vb">
+      <DependentUpon>frmConnectPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnectPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.vb">
+      <DependentUpon>frmMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainPage.Designer.vb">
+      <DependentUpon>frmMainPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentPage.Designer.vb">
+      <DependentUpon>frmPaymentPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPostProject.Designer.vb">
+      <DependentUpon>frmPostProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPostProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPremiumPage.Designer.vb">
+      <DependentUpon>frmPremiumPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPremiumPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrivacyPolicy.Designer.vb">
+      <DependentUpon>frmPrivacyPolicy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrivacyPolicy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfileEditPage.Designer.vb">
+      <DependentUpon>frmProfileEditPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfileEditPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfilePage.Designer.vb">
+      <DependentUpon>frmProfilePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfilePage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProjectFeed.Designer.vb">
+      <DependentUpon>frmProjectFeed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProjectFeed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettingsPage.Designer.vb">
+      <DependentUpon>frmSettingsPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettingsPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignUp.Designer.vb">
+      <DependentUpon>frmSignUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTabControl.Designer.vb">
+      <DependentUpon>frmTabControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTabControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTOS.Designer.vb">
+      <DependentUpon>frmTOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SessionData.vb" />
+    <Compile Include="frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAboutPage.resx">
+      <DependentUpon>frmAboutPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddProject.resx">
+      <DependentUpon>frmAddProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminPanel.resx">
+      <DependentUpon>frmAdminPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminSettings.resx">
+      <DependentUpon>frmAdminSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrowseProblems.resx">
+      <DependentUpon>frmBrowseProblems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnectPage.resx">
+      <DependentUpon>frmConnectPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainPage.resx">
+      <DependentUpon>frmMainPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentPage.resx">
+      <DependentUpon>frmPaymentPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPostProject.resx">
+      <DependentUpon>frmPostProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPremiumPage.resx">
+      <DependentUpon>frmPremiumPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrivacyPolicy.resx">
+      <DependentUpon>frmPrivacyPolicy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfileEditPage.resx">
+      <DependentUpon>frmProfileEditPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfilePage.resx">
+      <DependentUpon>frmProfilePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProjectFeed.resx">
+      <DependentUpon>frmProjectFeed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettingsPage.resx">
+      <DependentUpon>frmSettingsPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignUp.resx">
+      <DependentUpon>frmSignUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTabControl.resx">
+      <DependentUpon>frmTabControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTOS.resx">
+      <DependentUpon>frmTOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy of Creating account page %28no ticked%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main Menu %28Home Page%29 #Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo 2 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo 2 For Code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo 2 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\how-to-stop-being-a-people-pleaser-1_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_161209383_0z2ORLIdbxgcO4BiFUhGKdLYMJNDc1RS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_301200886_7y1204uG8OPvmUYzN4HueXPgLblqBce9.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
